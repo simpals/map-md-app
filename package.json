@@ -4,6 +4,11 @@
   "main": "./dist/map-md-app.js",
   "browser": "./dist/browser/map-md-app.js",
   "module": "./dist/es/map-md-app.js",
+  "homepage": "https://github.com/simpals/map-md-app#readme",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/simpals/map-md-app.git"
+  },
   "peerDependencies": {
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0"
