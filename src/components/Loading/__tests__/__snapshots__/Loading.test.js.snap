@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Loading component renders without crashing 1`] = `
+<styled.div>
+  <styled.img
+    src="test-file-stub"
+  />
+  <styled.div>
+    <styled.div
+      className="rect1"
+    />
+    <styled.div
+      className="rect2"
+    />
+    <styled.div
+      className="rect3"
+    />
+    <styled.div
+      className="rect4"
+    />
+    <styled.div
+      className="rect5"
+    />
+  </styled.div>
+</styled.div>
+`;

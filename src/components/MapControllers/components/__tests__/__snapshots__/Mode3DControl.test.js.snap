@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Mode3DControl component test Mode3DControl matchSnapshot 1`] = `
+<Mode3DControl
+  disable3DMode={false}
+  disable3DSatelite={false}
+  position={false}
+/>
+`;

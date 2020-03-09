@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test ZoomControl component renders without crashing 1`] = `
+<styled.div
+  className="ZoomControl"
+  position={false}
+>
+  <styled.button
+    onClick={[Function]}
+    type="button"
+  >
+    <styled.span
+      className="icon-add"
+    />
+  </styled.button>
+  <styled.span />
+  <styled.button
+    onClick={[Function]}
+    type="button"
+  >
+    <styled.span
+      className="icon-remove"
+    />
+  </styled.button>
+</styled.div>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Map component renders without crashing 1`] = `
+<Fragment>
+  <styled.div
+    id="map-app-container"
+  />
+  <ContextProvider
+    value={
+      Object {
+        "MapGL": null,
+        "authorization": "Basic OGMwZTY5M2MtNTU1Yi00ZGJmLThlMTAtYWM4NjQ4YThjODU0OnBhc2hhbGth",
+        "changeStyle": [Function],
+        "style": "map",
+        "userLocation": null,
+      }
+    }
+  >
+    <Logo
+      campaign=""
+      content=""
+      medium=""
+      source=""
+    />
+  </ContextProvider>
+</Fragment>
+`;

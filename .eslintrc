@@ -1,0 +1,42 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "standard", "standard-react"],
+  "plugins": ["react", "react-hooks", "jest"],
+  "rules": {
+    "semi": [2, "always"],
+    "react-hooks/rules-of-hooks": "error",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off",
+    "prefer-destructuring": "off",
+    "react/jsx-filename-extension": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "max-len": [1, 110, 2],
+    "react/forbid-prop-types": "off",
+    "array-callback-return": "off",
+    "consistent-return": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-restricted-globals": "off",
+    "camelcase": "off",
+    "quote-props":["error", "consistent-as-needed"],
+    "no-trailing-spaces": "off",
+    "import/prefer-default-export": "off",
+    "no-unmodified-loop-condition": "off",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-alert": "off"
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "globals": { "fetch": false }
+}

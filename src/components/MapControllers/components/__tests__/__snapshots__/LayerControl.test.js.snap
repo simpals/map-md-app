@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LayerControl component test LayerControl matchSnapshot 1`] = `
+<styled.div
+  className="LayerControl"
+>
+  <styled.a
+    layer={null}
+    onClick={[Function]}
+  />
+</styled.div>
+`;

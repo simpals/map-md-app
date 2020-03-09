@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'map-md-app';
+  src: url('https://map.md/static/fonts/map-icon-font/font/map-icon-font.woff2?98221589');
+  src: url('https://map.md/static/fonts/map-icon-font/font/map-icon-font.eot?51828479#iefix') format('embedded-opentype'),
+       url('https://map.md/static/fonts/map-icon-font/font/map-icon-font.woff2?98221589') format('woff2'),
+       url('https://map.md/static/fonts/map-icon-font/font/map-icon-font.woff?51828479') format('woff'),
+       url('https://map.md/static/fonts/map-icon-font/font/map-icon-font.ttf?51828479') format('truetype'),
+       url('https://map.md/static/fonts/map-icon-font/font/map-icon-font.svg?51828479#map-icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'map-md-app';
+    src: url('../font/map-md-app.svg?51828479#map-md-app') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "map-md-app";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-schedule:before { content: '\e800'; } /* '' */
+.icon-views:before { content: '\e802'; } /* '' */
+.icon-burger:before { content: '\e803'; } /* '' */
+.icon-code_rounded:before { content: '\e804'; } /* '' */
+.icon-facebook:before { content: '\e808'; } /* '' */
+.icon-comment-1:before { content: '\e809'; } /* '' */
+.icon-vertical-points:before { content: '\e838'; } /* '' */
+.icon-Roundabout:before { content: '\e900'; } /* '' */
+.icon-pins-group:before { content: '\e901'; } /* '' */
+.icon-glyph:before { content: '\e904'; } /* '' */
+.icon-add:before { content: '\e90a'; } /* '' */
+.icon-arrow_back:before { content: '\e90b'; } /* '' */
+.icon-arrow_forward_ios:before { content: '\e90c'; } /* '' */
+.icon-arrow_left:before { content: '\e90d'; } /* '' */
+.icon-call:before { content: '\e90e'; } /* '' */
+.icon-camera_alt:before { content: '\e90f'; } /* '' */
+.icon-close:before { content: '\e910'; } /* '' */
+.icon-cookie:before { content: '\e911'; } /* '' */
+.icon-create:before { content: '\e912'; } /* '' */
+.icon-description:before { content: '\e913'; } /* '' */
+.icon-directions_bus:before { content: '\e914'; } /* '' */
+.icon-directions_car:before { content: '\e915'; } /* '' */
+.icon-directions_lifebuoy:before { content: '\e916'; } /* '' */
+.icon-directions_marshrutka:before { content: '\e917'; } /* '' */
+.icon-directions_trolleybus:before { content: '\e918'; } /* '' */
+.icon-directions_walk:before { content: '\e919'; } /* '' */
+.icon-directions:before { content: '\e91a'; } /* '' */
+.icon-email:before { content: '\e91b'; } /* '' */
+.icon-expand_less:before { content: '\e91c'; } /* '' */
+.icon-expand_more:before { content: '\e91d'; } /* '' */
+.icon-facebook_rounded:before { content: '\e91e'; } /* '' */
+.icon-flag:before { content: '\e91f'; } /* '' */
+.icon-image:before { content: '\e920'; } /* '' */
+.icon-info:before { content: '\e921'; } /* '' */
+.icon-insert_comment:before { content: '\e922'; } /* '' */
+.icon-language:before { content: '\e923'; } /* '' */
+.icon-mobile_friendly:before { content: '\e924'; } /* '' */
+.icon-navigation:before { content: '\e925'; } /* '' */
+.icon-near_me:before { content: '\e926'; } /* '' */
+.icon-pan_tool:before { content: '\e927'; } /* '' */
+.icon-place:before { content: '\e928'; } /* '' */
+.icon-print:before { content: '\e929'; } /* '' */
+.icon-remove:before { content: '\e92a'; } /* '' */
+.icon-report_problem:before { content: '\e92b'; } /* '' */
+.icon-ring_volume:before { content: '\e92c'; } /* '' */
+.icon-search:before { content: '\e92d'; } /* '' */
+.icon-share:before { content: '\e92e'; } /* '' */
+.icon-straighten:before { content: '\e92f'; } /* '' */
+.icon-swap_calls:before { content: '\e930'; } /* '' */
+.icon-write:before { content: '\e931'; } /* '' */
+.icon-2D:before { content: '\e932'; } /* '' */
+.icon-3D:before { content: '\e933'; } /* '' */
+.icon-start:before { content: '\e936'; } /* '' */
+.icon-finish:before { content: '\e937'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-odnoklassniki:before { content: '\f30c'; } /* '' */

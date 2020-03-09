@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Error component renders without crashing 1`] = `
+<Error
+  error={null}
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "cebmy",
+            "rules": Array [
+              "
+  text-align: center;
+  padding: 140px 0 70px;
+  & > * {
+    font-family: SF Pro Display;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-bdVaJa cebmy"
+      >
+        <styled.img
+          alt="error image"
+          src="test-file-stub"
+        >
+          <StyledComponent
+            alt="error image"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bwzfXH",
+                  "isStatic": true,
+                  "lastClassName": "hPnSzP",
+                  "rules": Array [
+                    "
+  display: inline-block;
+  margin-bottom: 25px;
+",
+                  ],
+                },
+                "displayName": "styled.img",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bwzfXH",
+                "target": "img",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            src="test-file-stub"
+          >
+            <img
+              alt="error image"
+              className="sc-bwzfXH hPnSzP"
+              src="test-file-stub"
+            />
+          </StyledComponent>
+        </styled.img>
+        <styled.p>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "jdCEQr",
+                  "rules": Array [
+                    "
+  color: rgba(0, 0, 0, 0.4);
+  margin: 10px auto;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  max-width: 450px;
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <p
+              className="sc-htpNat jdCEQr"
+            >
+              Something went wrong
+            </p>
+          </StyledComponent>
+        </styled.p>
+        <styled.p>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "jdCEQr",
+                  "rules": Array [
+                    "
+  color: rgba(0, 0, 0, 0.4);
+  margin: 10px auto;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  max-width: 450px;
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <p
+              className="sc-htpNat jdCEQr"
+            >
+              Error message: null.
+            </p>
+          </StyledComponent>
+        </styled.p>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Error>
+`;
