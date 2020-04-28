@@ -1,4 +1,4 @@
-## map-md-app: http://map.md (React/UMD - mapbox-gl wrapper)
+## map-md-app: https://map.md (React/UMD - mapbox-gl wrapper)
 
 ## Available Scripts
 
