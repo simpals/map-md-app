@@ -28,7 +28,7 @@ Run your test scripts
 
 ## Contribution
 
-Feel free to make a pull request to [https://github.com/simpals/react-point-map]
+Feel free to make a pull request to [https://github.com/simpals/map-md-app]
 
 # Installation
 
