@@ -189,3 +189,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).<br>
 To learn Mapbox GL JS, check out the [Api Reference](https://docs.mapbox.com/mapbox-gl-js/api/).<br>
 To learn Mapbox GL Draw Polygon custom styles, check out the [Draw course](https://bl.ocks.org/dnseminara/0790e53cef9867e848e716937727ab18).
 
+## Development
+
+node.js version `<=12.x.x`

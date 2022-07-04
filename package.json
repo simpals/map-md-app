@@ -1,13 +1,13 @@
 {
   "name": "@simpals/map-md-app",
-  "version": "1.21.20",
+  "version": "1.22.0",
   "main": "./dist/map-md-app.js",
   "browser": "./dist/browser/map-md-app.js",
   "module": "./dist/es/map-md-app.js",
   "homepage": "https://github.com/simpals/map-md-app#readme",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/simpals/map-md-app.git"
+    "type": "git",
+    "url": "https://github.com/simpals/map-md-app.git"
   },
   "peerDependencies": {
     "react": ">= 16.8.0",
@@ -83,7 +83,7 @@
     "postcss-preset-env": "6.6.0",
     "postcss-safe-parser": "4.0.1",
     "postcss-styled": "^0.34.0",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^11.0.4",
     "resolve": "1.10.0",
     "rollup": "^1.18.0",
     "rollup-plugin-babel": "^4.3.3",
@@ -101,6 +101,7 @@
     "rollup-plugin-svg": "^2.0.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
+    "sockjs": "0.3.20",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.3",
     "ts-pnp": "1.1.2",
@@ -120,7 +121,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.1",
-    "three": "^0.105.2",
+    "three": "^0.125.0",
     "three-gltf-loader": "^1.105.0"
   },
   "browserslist": [
@@ -133,8 +134,8 @@
     "start": "env API_KEY='' HOST=0.0.0.0 REACT_APP_MAP_ENV=development NODE_ENV=development node scripts/start.js",
     "build-umd-browser": "env NODE_ENV=production browserify -t envify ./dist/umd/map-md-app.js -o ./dist/browser/map-md-app.js -s mapmdApp",
     "build-umd": "env NODE_ENV=production webpack -p --progress --colors --config ./config/webpack.prod-browser.config.js && npm run build-umd-browser",
-    "build-browser": "env NODE_ENV=production node --max-old-space-size=8192 node_modules/rollup/bin/rollup -c --environment browser && npm run build-umd-browser",
-    "build": "env NODE_ENV=production node --max-old-space-size=8192 node_modules/rollup/bin/rollup -c && npm run build-browser",
+    "build-browser": "env NODE_ENV=production node --max-old-space-size=8192 node_modules/rollup/dist/bin/rollup -c --environment browser && npm run build-umd-browser",
+    "build": "env NODE_ENV=production node --max-old-space-size=8192 node_modules/rollup/dist/bin/rollup -c && npm run build-browser",
     "test": "env NODE_ENV=test node scripts/test.js"
   },
   "husky": {
@@ -202,5 +203,5 @@
       "react-app"
     ]
   },
-  "license": "Apache License 2.0"
+  "license": "(MIT OR Apache-2.0)"
 }
