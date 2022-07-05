@@ -9,7 +9,7 @@ exports[`test Map component renders without crashing 1`] = `
     value={
       Object {
         "MapGL": null,
-        "authorization": "Basic OGMwZTY5M2MtNTU1Yi00ZGJmLThlMTAtYWM4NjQ4YThjODU0OnBhc2hhbGth",
+        "authorization": "Basic OnBhc2hhbGth",
         "changeStyle": [Function],
         "style": "map",
         "userLocation": null,

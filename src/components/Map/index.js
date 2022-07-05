@@ -151,7 +151,7 @@ Map.propTypes = {
   viewport: PropTypes.object.isRequired,
   onInit: PropTypes.func,
   onUserLocInit: PropTypes.func,
-  portalNode: PropTypes.instanceOf(Element),
+  portalNode: PropTypes.instanceOf(React.Element),
   children: PropTypes.func,
   init3DObjects: PropTypes.bool,
   disable3DMap: PropTypes.bool,

@@ -2,14 +2,13 @@
 import babel from 'rollup-plugin-babel';
 import img from 'rollup-plugin-img';
 import postcss from 'rollup-plugin-postcss';
-import resolve from 'rollup-plugin-node-resolve';
-import builtins from 'rollup-plugin-node-builtins';
+import resolve from '@rollup/plugin-node-resolve';
+// import nodePolyfills from 'rollup-plugin-node-polyfills';
 import globals from 'rollup-plugin-node-globals';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import commonjs from 'rollup-plugin-commonjs';
+import commonjs from '@rollup/plugin-commonjs';
 import filesize from 'rollup-plugin-filesize';
 import localResolve from 'rollup-plugin-local-resolve';
-// import minify from 'rollup-plugin-babel-minify';
 
 import pkg from './package.json';
 
@@ -26,7 +25,7 @@ const output = [
   }
 ];
 
-const commonconfig = {
+const commonConfig = {
   input: 'src/index.js',
   treeshake: true,
   output
@@ -38,9 +37,6 @@ export default (commandLineArgs) => {
 
   const commonPlugins = [
     localResolve(),
-    // minify({
-    //   comments: false
-    // }),
     img({
       extensions: /\.(png|jpg|jpeg|gif|svg)$/,
       limit: 100000
@@ -48,33 +44,16 @@ export default (commandLineArgs) => {
     postcss({
       plugins: [cssImport]
     }),
-    builtins(),
+    // nodePolyfills(),
     babel({ exclude: 'node_modules/**', runtimeHelpers: true }),
     commonjs({
-      include: 'node_modules/**',
-      namedExports: {
-        'react-dom': ['createPortal'],
-        'react-is': ['isValidElementType', 'isElement', 'ForwardRef'],
-        'src/static/images/view-type-icons.png': ['default'],
-        'react': [
-          'cloneElement',
-          'createContext',
-          'Component',
-          'Fragment',
-          'createElement',
-          'PureComponent',
-          'useContext',
-          'useState',
-          'useEffect',
-          'useRef'
-        ]
-      }
+      include: /\/node_modules\//,
     }),
     filesize()
   ];
 
   if (isBrowser) {
-    commonconfig.output = {
+    commonConfig.output = {
       file: './dist/umd/map-md-app.js',
       format: 'umd',
       name: 'mapmdApp',
@@ -99,7 +78,7 @@ export default (commandLineArgs) => {
     commonPlugins.push(peerDepsExternal());
   }
 
-  commonconfig.plugins = commonPlugins;
+  commonConfig.plugins = commonPlugins;
 
-  return commonconfig;
+  return commonConfig;
 };
