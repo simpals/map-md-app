@@ -78,7 +78,7 @@
     "husky": "^3.0.0",
     "identity-obj-proxy": "^3.0.0",
     "inline-environment-variables-webpack-plugin": "^1.2.1",
-    "is-wsl": "^1.1.0",
+    "is-wsl": "^2.2.0",
     "jest": "^28.1.2",
     "jest-resolve": "24.7.1",
     "jest-watch-typeahead": "0.3.0",
